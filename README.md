@@ -21,6 +21,8 @@ The codebase is organized following a modified clean architecture to ensure sepa
 - constants/: Application wide constants and error definitions
 - model/: Data structures that represent domain objects
 
+* for project layout I have used the following link as a reference: https://github.com/golang-standards/project-layout
+
 ## Technical Stack
 Go: Programming language.
 Echo: Web framework for handling HTTP requests.
