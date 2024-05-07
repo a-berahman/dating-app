@@ -37,6 +37,9 @@ func (r *repo) FindPotentialMatches(ctx context.Context, userID uint, filters *M
 		Not("users.id IN (?)", subQuery).
 		Where("date_of_birth >= ?", filters.MinDOB).
 		Where("date_of_birth <= ?", filters.MaxDOB)
+	if filters.Gender != "" {
+		query = query.Where("gender = ?", filters.Gender)
+	}
 
 	if filters != nil && filters.MaxDistance > 0 && lat != 0 && lng != 0 {
 		query = query.Where("ST_DWithin(location::geography, ST_MakePoint(?, ?)::geography, ?)",

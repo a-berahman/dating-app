@@ -96,8 +96,8 @@ curl -X POST http://localhost:8080/user/create
 curl -X POST http://localhost:8080/login \
     -H "Content-Type: application/json" \
     -d '{
-        "email": "user@example.com",
-        "password": "yourPassword"
+        "email": "mariliemetz@moore.com",
+        "password": "WidMJHF_q51?"
     }'
 
 # Discover Matches

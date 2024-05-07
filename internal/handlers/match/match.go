@@ -38,7 +38,7 @@ func (mh *MatchHandler) DiscoverMatches(c echo.Context) error {
 	if err := decode.DecodeAndValidateRequest(c.Request().Context(), &req, &decode.EchoDecoder{C: c}, &decode.EchoValidator{C: c}); err != nil {
 		return utils.ErrorResponse(c, http.StatusBadRequest, err.Error())
 	}
-	if req.Distance > 4000 {
+	if req.Distance < 4000 {
 		req.Distance = constant.DefaultDiscoveryDistance
 
 	}
