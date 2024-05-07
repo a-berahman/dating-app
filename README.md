@@ -66,7 +66,7 @@ The application service (app) depends on the database service (db). It will only
 This is managed by the depends_on clause with a service_healthy condition in the Docker Compose file. The PostGIS extension might take a bit of time to initialize. To handle this, the database service includes a health check that ensures the database is ready to accept connections before the application starts.
 
 
-This command starts the containers in detached mode. To stop the services, you can use:
+To stop the services, you can use:
 
 ```
 make docker-compose-down
