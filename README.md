@@ -2,12 +2,16 @@
 
 Hello there,
 
-I would like to mention that I have tried to introduce some basic ideas and this application is not ready for production, but it could be a useful hands-on experience, so, for instance I didn't use any cache solution, or using elasticsearch that would have many benefits for these kinds of search or like, the unit test is not completely perfect in this solution or haven't considered all the edge cases, but I have tried to cover mostlty the general idea.
+I would like to point out that this application is still in the development phase and not ready for production. I have introduced some basic concepts to demonstrate the general idea. For example, I did not implement a caching solution or use Elasticsearch, which could enhance the search functionality significantly. Also, the unit testing is not exhaustive and does not cover all edge cases, but it captures the main concepts I wanted to showcase.
+Also, initially I considered implementing a DDD approach, but after some deliberation, I opted for a structure that, although less focused on domain separation, centralized the logic and repository layers. This approach not only standardized the components but also introduced some architectural challenges that I believe are beneficial from an interview perspective
+
 hopefully you will find this solution useful.
 
 ## Project Overview
 
 This backend is structured to support a dating application, featuring user management, authentication, and matching based on location and preferences.
+
+https://github.com/a-berahman/dating-app/assets/62759025/01178e9f-f425-4521-9d15-b240532981b1
 
 ## Architecture
 The codebase is organized following a modified clean architecture to ensure separation of concerns and scalability:
