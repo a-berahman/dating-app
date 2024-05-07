@@ -50,7 +50,7 @@ Set the following environment variables in your .env file or export them in your
 You can build and run the project using Docker:
 
 ```
-make docker-compose-up:
+make docker-compose-up
 ```
 
 OR
